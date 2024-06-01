@@ -49,6 +49,7 @@ function App() {
       authorise(initdata, invitCode).then(json=>{
         console.log(json)
        dispatch(setUser(json))
+       alert( JSON.stringify(json))
     setLoading(false)
 
 
