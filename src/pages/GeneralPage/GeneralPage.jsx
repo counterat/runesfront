@@ -38,14 +38,7 @@ function GeneralPage() {
   const [isOpenMana, setIsOpenMana] = useState(false);
   const [isOpenStory, setIsOpenStory] = useState(false);
   const  [hasModal, setHasModal] = useState(false)
-  window.onerror = function(message, source, lineno, colno, error) {
-    alert(`Error: ${message}\nSource: ${source}\nLine: ${lineno}, Column: ${colno}, ${error}`);
-    return true;
-  };
-  
-  window.addEventListener('unhandledrejection', function(event) {
-    alert(`Unhandled rejection: ${event.reason}`);
-  });
+
 const user = useRef();
 user.current=useSelector(state=>state.user.user)
 console.log(user.current)

@@ -12,14 +12,7 @@ import "react-modern-drawer/dist/index.css";
 import { authorise } from "./api/authorise";
 import { setUser } from "./redux/features/userSlice";
 import { useDispatch, useSelector } from "react-redux";
-window.onerror = function(message, source, lineno, colno, error) {
-  alert(`Error: ${message}\nSource: ${source}\nLine: ${lineno}, Column: ${colno}, ${error}`);
-  return true;
-};
 
-window.addEventListener('unhandledrejection', function(event) {
-  alert(`Unhandled rejection: ${event.reason}`);
-});
 function App() {
   const user = useRef()
   user.current = useSelector(state=>state.user.user)
