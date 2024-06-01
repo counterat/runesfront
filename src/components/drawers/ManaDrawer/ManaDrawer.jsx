@@ -40,7 +40,7 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
           <img src={mana} alt="" />
           <p className="manaBalanceText">Mana</p>
           <ProgressBar
-            completed={60}
+            completed={user.current.mana}
             className="progressBarManaBalance"
             bgColor="#fec14d"
             labelColor="black"
