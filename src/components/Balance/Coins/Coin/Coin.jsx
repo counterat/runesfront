@@ -19,7 +19,7 @@ function Coin({ balance, name, special }) {
       <div className={`coinName ${name === "ton" ? "ton" : "fehu"}`}>
         <img src={name === "ton" ? ton : fehu} alt="" />
       </div>
-      <button className={`withdraw ${name === "fehu" && 'disabled'}`} disabled={name === "fehu"}>
+      <button className={`withdraw ${name === "fehu" ? 'disabled' :''}`} onClick={name=='ton'? function(){setHasModal(!hasModal)} : function(){}} >
         <img src={name === "ton" ? withdraw : withdrawNoShadow} alt="" />
       </button> 
       {hasModal && <UserFooter setHasFooter={setHasModal} modalType={MODAL_TYPES.WITHDRAWAL} />}
