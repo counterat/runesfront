@@ -136,6 +136,7 @@ const currencyInputHandler = (event, value) => {
             value={amountInputValue}
             onChange={amountInputHandler}
  onBlur={blurHandler}
+ pattern="[0-9]*[.,]?[0-9]*"
           />
         </div>
 { (buttonTitle != 'Вывод') && <div>
