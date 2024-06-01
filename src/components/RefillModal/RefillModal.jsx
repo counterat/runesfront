@@ -65,7 +65,13 @@ export const RefillModal = ({ setHasFooter }) => {
   return (
     <>
       {hasForm && (
-        <Overlay isClose={isFormClose} close={() => setHasFooter(false)}>
+        <Overlay
+        isClose={isFormClose}
+        close={() => {
+          setIsFormClose(true);
+          setHasFooter(false);
+        }}
+      >
           <HeaderSection
             setOnClose={setOnClose}
             hasForm={hasForm}
@@ -95,7 +101,7 @@ export const RefillModal = ({ setHasFooter }) => {
           isClose={isAddressClose}
           close={() => {
             setHasAddress(undefined);
-            setHasFooter(true)
+            setHasFooter(true);
             setHasForm(true);
           }}
         >
@@ -172,11 +178,13 @@ export const RefillModal = ({ setHasFooter }) => {
       )}
 
       {hasSuccess && (
-        <Overlay isClose={isSuccessClose}
+        <Overlay
+        isClose={isSuccessClose}
           close={() => {
             setHasSuccess(false);
             setHasForm(true);
-          }}>
+          }}
+          >
           <HeaderSection
             setOnClose={setOnClose}
             setIsThisModalClose={setIsSuccessClose}
