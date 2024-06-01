@@ -201,7 +201,6 @@
     z-index: 2;
     width: 70%;
     height: 20px;
-    margin: 0 auto;
 }
 
 @media (max-width: 400px) {
@@ -329,7 +328,6 @@
         font-size: 18px;
     }
 } 
-
 .runeMiddleTime {
     position: absolute;
     top: 12.5%;
