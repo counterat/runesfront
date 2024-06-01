@@ -44,6 +44,7 @@ function ManaDrawer({ isOpen, toggleDrawer }) {
             className="progressBarManaBalance"
             bgColor="#fec14d"
             labelColor="black"
+            labelAlignment="left"
             borderRadius={5}
             maxCompleted={100}
             baseBgColor="#204061"

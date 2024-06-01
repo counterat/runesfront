@@ -1,5 +1,5 @@
 .form {
-  color: #4c4c4c;
+  color: white;
   &__autocomplete {
     margin-bottom: 24px;
     padding: 0;
@@ -132,17 +132,11 @@
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    color: #fff;
-    font-size: 20px;
+    color: black;
+    background-color: #FFC341;
+    font-size: 23px;
     text-transform: uppercase;
-    background-color: #d89553;
-
     transition: all 0.3s ease;
-
-    &:active {
-      background-color: #fff;
-      color: #d89553;
-    }
   }
 }
 

@@ -80,7 +80,7 @@ dispatch(setUser(json))
   return (
     <>
       {hasForm && (
-        <Overlay isClose={isFormClose}>
+        <Overlay isClose={isFormClose} close={setHasFooter}>
           <HeaderSection
             setOnClose={setOnClose}
             hasForm={hasForm}

@@ -143,6 +143,7 @@ console.log(now)
               className="progressBar"
               bgColor="#fec14d"
               labelColor="black"
+              labelAlignment="left"
               borderRadius={5}
               maxCompleted={100}
               baseBgColor="#204061"
