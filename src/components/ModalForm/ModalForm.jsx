@@ -152,7 +152,7 @@ const currencyInputHandler = (event, value) => {
           id="currency"
           clearIcon={null}
           className={styles.form__autocomplete}
-          options={['USDT', 'TON']}
+          options={['USDT', 'TON', 'BNB', 'BTC', 'LTC', 'TRX']}
           sx={{ width: 300 }}
           defaultValue={'USDT'}
           // PaperComponent={({ children }) => (
