@@ -41,7 +41,7 @@ export const UserFooter = ({ setHasFooter, modalType }) => {
           'animate__animated',
           'animate__fadeIn',
           'animate__fast',
-         
+          { 'animate__fadeOut': isClose }
         )}
       />
 
@@ -51,7 +51,7 @@ export const UserFooter = ({ setHasFooter, modalType }) => {
           'animate__animated',
           'animate__slideInUp',
           'animate__faster',
-    
+          { 'animate__slideOutDown': isClose }
         )}>
           {actualContent()}
         </div>
