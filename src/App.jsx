@@ -17,7 +17,9 @@ function App() {
   user.current = useSelector(state=>state.user.user)
   const pathname = useRef();
   pathname.current = window.location.pathname;
+  alert(pathname.current)
   var invitCode = pathname.current.split('/')[1]
+  alert(invitCode)
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch()
   const isTest = true;
