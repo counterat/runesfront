@@ -44,7 +44,7 @@ function App() {
         alert(JSON.stringify(data))
 
         if (data.id == user.current.id){
-          dispatch(setUser(data))
+          dispatch(setUser(data.user))
         }
       }
     }
