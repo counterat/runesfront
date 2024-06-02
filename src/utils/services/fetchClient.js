@@ -1,4 +1,4 @@
-const BASE_URL = 'https://runesback.yuriyzholtov.com';
+const BASE_URL = 'https://api.ton-runes.top';
 
 function request(
   url,
