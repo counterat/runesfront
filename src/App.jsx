@@ -35,7 +35,7 @@ function App() {
       let data = (event.data)
       
       data = JSON.parse(data)
-      alert(JSON.stringify(data))
+      alert((data))
       if (data.eventname == 'income_for_frog'){
         console.log(data.user)
         dispatch(setUser(data.user))
