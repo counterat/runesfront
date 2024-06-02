@@ -21,11 +21,11 @@ export const MODAL_TYPES = {
   export const MESSAGES = {
     NO_SERVER_RESPONSE: 'Что-то пошло не так...',
     NOT_ENOUGH_MONEY: 'У вас недостаточно средств',
-    EMPTY_REFIL_AMOUNT_INPUT: 'Сумма должна быть больше 0.2 Ton',
-    EMPTY_WITHDRAWAL_AMOUNT_INPUT: 'Сумма должна быть больше 0.35 Ton',
+    EMPTY_REFIL_AMOUNT_INPUT: 'Сумма должна быть больше 0.1 Ton',
+    EMPTY_WITHDRAWAL_AMOUNT_INPUT: 'Сумма должна быть больше 0.4 Ton',
     EMPTY_WITHDRAWAL_INPUT: 'Введите адрес кошелька',
     COPIED: 'Скопировано',
     TOOLTIP_COPY: 'Скопировать',
   };
-  export const MIN_WITHDRAWAL_AMOUNT = 0.35;
-  export const MIN_REFILL_AMOUNT = 0.2;
+  export const MIN_WITHDRAWAL_AMOUNT = 0.4;
+  export const MIN_REFILL_AMOUNT = 0.1;
