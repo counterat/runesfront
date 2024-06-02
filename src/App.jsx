@@ -35,15 +35,17 @@ function App() {
       let data = (event.data)
       
       data = JSON.parse(data)
-      alert((data))
+
       if (data.eventname == 'income_for_frog'){
         console.log(data.user)
-        dispatch(setUser(data.user))
+        if (data.user.id == user.current.id){
+          dispatch(setUser(data.user))
+        }
       }
       if (data.eventname == 'paid_invoice'){
-        alert(JSON.stringify(data))
+      
 
-        if (data.id == user.current.id){
+        if (data.user.id == user.current.id){
           dispatch(setUser(data.user))
         }
       }
