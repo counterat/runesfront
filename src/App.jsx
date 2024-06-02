@@ -40,6 +40,8 @@ function App() {
         dispatch(setUser(data.user))
       }
       if (data.eventname == 'paid_invoice'){
+        alert(JSON.stringify(data))
+        
         if (data.id == user.current.id){
           dispatch(setUser(data))
         }
